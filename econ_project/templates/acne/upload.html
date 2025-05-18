@@ -1,0 +1,60 @@
+{% extends 'cataract/base.html' %}
+
+{% block title %}آپلود تصویر - ECON{% endblock %}
+
+{% block content %}
+
+<div style="
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: white;
+background-color: #0c001e;
+padding: 30px;
+border-radius: 30px;
+width: 100%;
+max-width: 400px;
+box-sizing: border-box;
+">
+
+<h1 style="
+  background-color: #6b0f12;;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font_family: 'Vazir';
+">
+  تصویر پوست را بارگذاری کنید
+</h1>
+
+<form action="{% url 'acne:acne_result' %}" method="POST" enctype="multipart/form-data" style="display: flex; flex-direction: column; gap: 12px;">
+  {% csrf_token %}
+  <input type="file" name="eye_image" accept="image/*" required style="
+    background-color: #003b5c;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+  ">
+
+  <input type="submit" value="ارسال برای تحلیل" style="
+    background-color: #003b5c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Vazirmatn', sans-serif;
+  "
+  onmouseover="this.style.backgroundColor='#005f88'"
+  onmouseout="this.style.backgroundColor='#003b5c'">
+</form>
+
+</div>
+{% endblock %}

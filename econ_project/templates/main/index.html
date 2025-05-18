@@ -1,0 +1,86 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+
+{% block title %}نتیجه تحلیل - ECON{% endblock %}
+
+{% block content %}
+
+<div style="display: flex; flex-direction: column; align-items: center; padding: 24px;  min-height: 100vh;">
+
+  <a href="/cataract">
+    <img src="{% static 'main/cataract.png' %}" alt="cataract"
+         style="width: 90%; max-width: 400px; border-radius: 15px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); margin-bottom: 24px;
+                transition: all 0.4s ease-in-out; display: block; cursor: pointer;"
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 16px 40px rgba(0,0,0,0.6)'"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.5)'">
+  </a>
+
+  <a href="/dryeye">
+    <img src="{% static 'main/dryeye.png' %}" alt="dryeye"
+         style="width: 90%; max-width: 400px; border-radius: 15px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); margin-bottom: 24px;
+                transition: all 0.4s ease-in-out; display: block; cursor: pointer;"
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 16px 40px rgba(0,0,0,0.6)'"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.5)'">
+  </a>
+
+  <a href="/strabismus">
+    <img src="{% static 'main/strabismus.png' %}" alt="strabismus"
+         style="width: 90%; max-width: 400px; border-radius: 15px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); margin-bottom: 24px;
+                transition: all 0.4s ease-in-out; display: block; cursor: pointer;"
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 16px 40px rgba(0,0,0,0.6)'"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.5)'">
+  </a>
+
+  <a href="/acne">
+    <img src="{% static 'main/acne.png' %}" alt="acne"
+         style="width: 90%; max-width: 400px; border-radius: 15px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); margin-bottom: 24px;
+                transition: all 0.4s ease-in-out; display: block; cursor: pointer;"
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 16px 40px rgba(0,0,0,0.6)'"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.5)'">
+  </a>
+
+  <a href="/eczema">
+    <img src="{% static 'main/eczema.png' %}" alt="eczema"
+         style="width: 90%; max-width: 400px; border-radius: 15px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); margin-bottom: 24px;
+                transition: all 0.4s ease-in-out; display: block; cursor: pointer;"
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 16px 40px rgba(0,0,0,0.6)'"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.5)'">
+  </a>
+
+  <a href="/psoriasis">
+    <img src="{% static 'main/psoriasis.png' %}" alt="psoriasis"
+         style="width: 90%; max-width: 400px; border-radius: 15px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); margin-bottom: 24px;
+                transition: all 0.4s ease-in-out; display: block; cursor: pointer;"
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 16px 40px rgba(0,0,0,0.6)'"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.5)'">
+  </a>
+
+  <a href="/dental_caries">
+    <img src="{% static 'main/dentalcaries.png' %}" alt="dental caries"
+         style="width: 90%; max-width: 400px; border-radius: 15px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); margin-bottom: 24px;
+                transition: all 0.4s ease-in-out; display: block; cursor: pointer;"
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 16px 40px rgba(0,0,0,0.6)'"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.5)'">
+  </a>
+
+  <a href="/gingivitis">
+    <img src="{% static 'main/gingivitis.png' %}" alt="gingivitis"
+         style="width: 90%; max-width: 400px; border-radius: 15px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); margin-bottom: 24px;
+                transition: all 0.4s ease-in-out; display: block; cursor: pointer;"
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 16px 40px rgba(0,0,0,0.6)'"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.5)'">
+  </a>
+
+</div>
+
+{% endblock %}

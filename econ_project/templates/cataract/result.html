@@ -1,0 +1,45 @@
+{% extends 'cataract/base.html' %}
+
+{% block title %}نتیجه تحلیل - ECON{% endblock %}
+
+{% block content %}
+<div style="max-width: 400px; margin: 60px auto; padding: 0 16px;">
+
+    <!-- بلوک تشخیص و هشدار -->
+    <div style="margin-bottom: 24px;">
+      <div style="background-color: #6b0f12; color: white; padding: 16px; border-radius: 10px; text-align: center;">
+        <p style="font-weight: bold; margin: 0;">{{ diagnosis }}</p>
+      </div>
+
+      <div style="background-color: #4b0d13; color: white; padding: 16px; border-radius: 10px; font-size: 14px; line-height: 1.8; margin-top: 16px; text-align: right;">
+        اگر علائم شدید دارید یا احساس می‌کنید وضعیت‌تان بدتر شده، فوراً به پزشک مراجعه کنید و بدون تأخیر با ۱۱۵ تماس بگیرید
+      </div>
+    </div>
+
+    <!-- فرم ارتباط با دکتر -->
+    <form>
+      <div style="background-color: #015a72; color: white; padding: 12px; border-radius: 10px; text-align: center; margin-bottom: 14px; font-weight: bold;">
+        ارتباط با دکتر متخصص
+      </div>
+
+      <div style="background-color: #015a72; padding: 16px; border-radius: 10px; font-size: 14px;">
+
+        <div style="border-bottom: 1px solid #ccc; padding-bottom: 8px; margin-bottom: 10px; display: flex; flex-direction: row-reverse; justify-content: space-between;">
+          <span>دکتر سید محمدعلی معلم</span>
+          <a href="tel:07136517573" style="color: #b2ebf2; text-decoration: none;">07136517573</a>
+        </div>
+
+        <div style="border-bottom: 1px solid #ccc; padding-bottom: 8px; margin-bottom: 10px; display: flex; flex-direction: row-reverse; justify-content: space-between;">
+          <span>دکتر رضا عبودی</span>
+          <a href="tel:07132301693" style="color: #b2ebf2; text-decoration: none;">07132301693</a>
+        </div>
+
+        <div style="display: flex; flex-direction: row-reverse; justify-content: space-between;">
+          <span>دکتر علی توللی</span>
+          <a href="tel:07136270813" style="color: #b2ebf2; text-decoration: none;">07136270813</a>
+        </div>
+
+      </div>
+    </form>
+
+{% endblock %}
